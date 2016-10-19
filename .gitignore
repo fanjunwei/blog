@@ -1,1 +1,4 @@
-output
+/output
+/cache
+/.doit.db.db
+/.idea
