@@ -26,7 +26,7 @@ SITE_URL = "https://fanjunwei.github.io/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://fanjunwei.github.io/"
 BLOG_EMAIL = "fanjunwei003@163.com"
-BLOG_DESCRIPTION = "This is a demo site for Nikola."  # (translatable)
+BLOG_DESCRIPTION = "范俊伟随笔。"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -1133,7 +1133,17 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-# EXTRA_HEAD_DATA = ""
+EXTRA_HEAD_DATA = """
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?808bb598d88443f6f81058c6dd57665a";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+"""
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
